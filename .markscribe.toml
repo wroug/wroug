@@ -1,0 +1,8 @@
+[output]
+file = "README.md"
+
+[sections.languages]
+plugin = "wakatime/languages"
+
+[sections.projects]
+plugin = "wakatime/projects"
