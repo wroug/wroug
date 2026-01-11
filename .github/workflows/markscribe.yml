@@ -1,0 +1,17 @@
+name: Markscribe
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: muesli/markscribe-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          wakatime_api_key: ${{ secrets.WAKATIME_API_KEY }}
