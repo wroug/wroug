@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: muesli/markscribe@v1
+      - uses: muesli/markscribe
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           wakatime_api_key: ${{ secrets.WAKATIME_API_KEY }}
